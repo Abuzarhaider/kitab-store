@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/icon.png">
+    <title>Kitab</title>
+</head>
+
+<body>
+    <nav>
+        <!-- nav top banner -->
+        <div class="nav_topBanner">
+            <div class="nav_settings">
+                <ul>
+                    <li class="nav_liAlign"><i class="fa-solid fa-location-dot"></i>
+                        <p>Store Locator</p>
+                    </li>
+                    <hr>
+                    <li class="option">
+                        <div class="nav_liAlign">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p>Currency</p> <i class="fa-solid fa-angle-down angleDown"></i>
+                        </div>
+                        <ul class="currency">
+                            <li>PKR</li>
+                            <li>USD</li>
+                            <li>GBP</li>
+                            <li>INR</li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="option">
+                        <div class="nav_liAlign">
+                            <i class="fa-solid fa-language"></i>
+                            <p>Language</p> <i class="fa-solid fa-angle-down angleDown"></i>
+                        </div>
+                        <ul class="currency">
+                            <li>Urdu</li>
+                            <li>English</li>
+                            <li>Dutch</li>
+                            <li>French</li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="option">
+                        <div class="nav_liAlign">
+                            <i class="fa-solid fa-user"></i>
+                            <p>My Account</p> <i class="fa-solid fa-angle-down angleDown"></i>
+                        </div>
+                        <ul class="currency">
+                            <li>Info</li>
+                            <li>Edit Info</li>
+                            <li>Setting</li>
+                            <li>Logout</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_info">
+                <ul>
+                    <li>About Us</li>
+                    <hr>
+                    <li>Contact US</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Nav top banner END -->
+
+
+
+        <!-- Main NAvigation -->
+
+        <div class="navBar">
+            <div class="navBar_logo">
+                <img src="./images/logo.png" alt="Book">
+                <h1>Kitab</h1>
+            </div>
+
+            <div class="navBar_menu">
+                <ul>
+                    <li class="li latest" onclick="showLatestMenu()">Latest <i
+                            class="fa-solid fa-angle-down angleDown"></i></li>
+                    <div class="showLatest">
+                        <div class="showLatest_text">
+                            <h4>Detective Novels</h4>
+                            <a href="">The Moonstone</a>
+                            <a href="">The Big Sleep</a>
+                            <a href="">A Study in Scarlet</a>
+                        </div>
+
+                        <div class="showLatest_text">
+                            <h4>Comics</h4>
+                            <a href="">X-Force #13</a>
+                            <a href="">Marauders #13</a>
+                            <a href="">True Believers</a>
+                            <a href="">Iron Man And Hulk</a>
+                        </div>
+
+                        <div class="showLatest_text">
+                            <h4>For Kids</h4>
+                            <a href="">Class Act</a>
+                            <a href="">The Lost Spells</a>
+                            <a href="">Bunheads</a>
+                            <a href="">The Goody</a>
+                        </div>
+                    </div>
+
+                    <li class="li Books">Books <i class="fa-solid fa-angle-down angleDown"></i></li>
+                    <div class="showLatest showBooks">
+                        <div class="showLatest_text">
+                            <h4>Custom Favourite</h4>
+                            <a href="">Fiction Books</a>
+                            <a href="">Theoratical Books</a>
+                            <a href="">School Books</a>
+                        </div>
+
+                        <div class="showLatest_text">
+                            <h4>Categories</h4>
+                            <a href="">Comics</a>
+                            <a href="">Fantasy</a>
+                            <a href="">Detective</a>
+                            <a href="">Novels</a>
+                        </div>
+
+                        <div class="showLatest_text">
+                            <h4>Science</h4>
+                            <a href="">Science Fiction</a>
+                            <a href="">Biography</a>
+                            <a href="">History</a>
+                            <a href="">Poetry</a>
+                        </div>
+                    </div>
+
+                    <li class="li">Collection</li>
+                    <li class="li kids">Kids <i class="fa-solid fa-angle-down angleDown"></i></li>
+                    <div class="showLatest showKids">
+                        <div class="showLatest_text">
+                            <h4>Top Collections</h4>
+                            <a href="">American Girl</a>
+                            <a href="">Diary Wimpy Kid</a>
+                            <a href="">Finding Dory</a>
+                            <a href="">Harry Potter</a>
+                        </div>
+
+                        <div class="showLatest_text">
+                            <h4>More For Kids</h4>
+                            <a href="">B&N Educators</a>
+                            <a href="">B&N Kid's Club</a>
+                            <a href="">Kid's Music</a>
+                            <a href="">Toys & Games</a>
+                        </div>
+                    </div>
+
+                    <li class="li">Featured</li>
+                    <li class="li">Blog</li>
+                </ul>
+            </div>
+
+            <div class="navBar_icons">
+                <!-- search -->
+                <a href="#" class="search" onclick="showSearch()"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <div class="searchDiv">
+                    <h1 onclick="closeSearch()"><i class="fa-solid fa-xmark"></i></h1>
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+
+                <!-- cart -->
+                <a href="#" onclick="showCart()"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                <div class="cartDiv">
+                    <div class="cartBanner">
+                        <p>Cart (0)</p>
+                        <p onclick="closeCart()"><i class="fa-solid fa-xmark"></i></p>
+                    </div>
+
+                    <div class="cartProducts">
+                        <p>No Items in the cart</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- menu bar btn -->
+            <div class="menuBtn_main">
+                <input type="checkbox" id="menuBar" onclick="showSideMenu()">
+                <label class="menuBtn" for="menuBar" ><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NavBar End -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Slider Animation div -->
+    <div class="animate_main">
+        <div class="animate_child">
+            <div class="animate_text">
+                <h1 class="h1_animateDown">New Arrival</h1>
+                <h1 class="h1_animateLeft">LATEST BOOKS</h1>
+                <p class="p_animateRight">Novel that will Excite You. Stories that will refresh your mind</p>
+                <button class="btn_animateUp">Shop Now</button>
+            </div>
+            <div class="animate_img">
+                <img src="./images/undraw_Bibliophile_hwqc (1).svg" alt="girl image">
+            </div>
+        </div>
+    </div>
+    <!-- Slider Animation End -->
+
+
+
+
+
+
+
+
+
+    <!-- About div -->
+
+    <div class="about">
+        <h1>
+            Kitab Publication - helping teachers and students since 2010
+        </h1>
+        <p>
+            At Kitab, we sell books, ebooks, PDF, mp3, word documents, and all kinds of digital products. Once you
+            order, you can download instantly and access it easily. You can order books which we will delivery within
+            2-10 days. We help teachers and students as per their needs.
+        </p>
+    </div>
+    <!-- About div End -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Categories div -->
+    <div class="categ">
+
+        <div class="categ_text">
+            <h1>Top Categories</h1>
+            <p>These are the top categories of the technologists, educators, operators and lifelong learners.</p>
+        </div>
+
+        <!-- images categ -->
+        <div class="categ_img">
+            <div class="catalyst"><img src="./images/catalysts.jpeg" alt="Catalyst"></div>
+            <div class="catalyst catalyst2"><img src="./images/environment.jpeg" alt="Environment"></div>
+            <div class="catalyst catalyst3"><img src="./images/fiction.jpeg" alt="Fiction"></div>
+            <div class="catalyst catalyst4"><img src="./images/math.jpeg" alt="Math"></div>
+            <div class="catalyst catalyst5"><img src="./images/science.jpeg" alt="Science"></div>
+            <div class="catalyst catalyst6"><img src="./images/technologies.jpeg" alt="Technologies"></div>
+        </div>
+
+    </div>
+    <!-- Categories end -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Categ Shop -->
+    <div class="categ_products">
+
+        <div class="products_shop">
+            <!-- img -->
+            <div class="products_img">
+            </div>
+            <!-- text -->
+            <div class="products_text">
+                <h2>Comics</h2>
+                <p>50% Off</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <!-------->
+
+        <div class="products_shop">
+            <!-- img -->
+            <div class="products_img prod_Img2">
+            </div>
+            <!-- text -->
+            <div class="products_text">
+                <h2>Comics</h2>
+                <p>50% Off</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <!-------->
+
+        <div class="products_shop">
+            <!-- img -->
+            <div class="products_img prod_Img3">
+            </div>
+            <!-- text -->
+            <div class="products_text">
+                <h2>Comics</h2>
+                <p>50% Off</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <!-------->
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="products">
+
+        <div class="prod_text">
+            <h1>Products</h1>
+            <p>Books that inspire you & increase your love of reading.</p>
+            <div class="prod_btn">
+                <button class="prod_btns1" onclick="showProduct1()">Best Books</button>
+                <button class="prod_btns2" onclick="showProduct2()">Featured</button>
+                <button class="prod_btns3" onclick="showProduct3()">Sale off</button>
+            </div>
+        </div>
+
+
+        <!----------------- 
+            Products Books 
+        -------------------->
+
+        <!-- products 1 -->
+        <div class="products_div1">
+            <div class="products_books">
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>HARRY POTTER <br> <span class="span_h2Books"> CHAMBER OF SECRETS </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">J.K Rowling</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img2">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>THE <br> <span class="span_h2Books"> MARTIAN </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Andy Weir</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img3">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>SORRY FOR <br> <span class="span_h2Books"> YOUR LOSS </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Jessie & Floey</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img4">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>STEPHEN KING <br> <span class="span_h2Books"> THE OUTSIDER </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Stephen King</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Products Two  -->
+        <div class="products_div2">
+            <div class="products_books">
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img div2_img1">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2> STEPHEN KING <br> <span class="span_h2Books"> THE OUTSIDER </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Stephen King</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img2 div2_img2">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>HARRY POTTER <br> <span class="span_h2Books"> CHAMBER OF SECRETS </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">J.K Rowling</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img3 div2_img3">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>THE <br> <span class="span_h2Books"> MARTIAN </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Andy Weir</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img4 div2_img4">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2> MEDITATION <br> <span class="span_h2Books"> FOR THE SOUL </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Jared M. Weinstein</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Products Three  -->
+        <div class="products_div3">
+            <div class="products_books">
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img div3_img1">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2> HARRY POTTER <br> <span class="span_h2Books"> CHAMBER OF SECRETS </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">J.K Rowling</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img2 div3_img2">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>THE ZOLIN <br> <span class="span_h2Books"> CONSPIRACY </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Charlotte E. English</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img3 div3_img3">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>SORRY FOR <br> <span class="span_h2Books"> YOUR LOSS </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Jessie & Floey</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="books">
+                    <!-- img -->
+                    <div class="book_imgParent">
+                        <div class="books_img book_Img4 div3_img4">
+                        </div>
+                    </div>
+                    <!-- text -->
+                    <div class="books_text">
+                        <h2>THE <br> <span class="span_h2Books"> MARTIAN </span> </h2>
+                        <p class="p1_books">BY</p>
+                        <p class="p2_books">Andy Weir</p>
+                        <p class="p3_books">50 $ only</p>
+                    </div>
+
+                    <!-- div show on hover -->
+                    <div class="books_showDiv">
+                        <button><i class="fa-regular fa-heart"></i> Add To Wishlist</button>
+                        <button><i class="fa-solid fa-shuffle"></i> Compare</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- products with button END -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="features">
+        <div class="features_heading">
+            <h1>Features</h1>
+        </div>
+
+
+
+        <!-- feature Child One -->
+        <div class="fearure_child1">
+            <!--  -->
+            <div class="readmore">
+                <div class="readmore_icon">
+                    <p><i class="fa-solid fa-bolt"></i></p>
+                </div>
+
+                <div class="readmore_text">
+                    <h2><a href="#">Instant Access</a></h2>
+                    <p>Once you order and payment is successful, you download is ready. You can access your all your
+                        digital access at Account >> Downloads.</p>
+                    <p class="read"><a href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="readmore">
+                <div class="readmore_icon">
+                    <p><i class="fa-solid fa-cloud-arrow-down"></i></p>
+                </div>
+
+                <div class="readmore_text">
+                    <h2><a href="#">Unlimited Download</a></h2>
+                    <p>It is a long established fact that a reader will be of a page when reader will be of a page
+                        looking at its layout.</p>
+                    <p class="read"><a href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="readmore">
+                <div class="readmore_icon">
+                    <p><i class="fa-solid fa-arrow-down-1-9"></i></p>
+                </div>
+
+                <div class="readmore_text">
+                    <h2><a href="#">Digital Downloads</a></h2>
+                    <p>It is a long established fact that a reader will be of a page when reader will be of a page
+                        looking at its layout.</p>
+                    <p class="read"><a href="#">Read More</a></p>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+
+
+
+
+        <!-- feature Child 2 -->
+        <div class="feature_child2">
+            <div class="child2_img">
+                <img src="./images/lorem_ipsum_1.svg">
+            </div>
+
+            <div class="child2_text">
+                <h1>What is Lorem Ipsum?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam rerum vitae odio molestiae
+                    dolorum, tempore totam quasi? Et voluptas velit architecto ab autem quos minima dolorum non delectus
+                    in.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+
+
+
+        <!-- feature Child 3 -->
+        <div class="feature_child2 child3">
+
+            <div class="child2_text">
+                <h1>What is Lorem Ipsum?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam rerum vitae odio molestiae
+                    dolorum, tempore totam quasi? Et voluptas velit architecto ab autem quos minima dolorum non delectus
+                    in.</p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="child2_img lorem_img2">
+                <img src="./images/lorem_ipsum_two.svg">
+            </div>
+
+        </div>
+
+    </div>
+    <!-- features End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- testimonials -->
+
+    <div class="testim">
+
+        <div class="testim_title">
+            <h1>Testimonials</h1>
+        </div>
+
+
+        <div class="testim_slider">
+            <h1><i class="fa-solid fa-chevron-left"></i></h1>
+
+            <div class="testim_slider_img">
+                <img src="./images/testimonials_female.svg" alt="Profile">
+            </div>
+
+
+            <div class="testim_slider_text">
+                <img src="./images/star.svg" alt="Star Rating">
+                <img src="./images/star.svg" alt="Star Rating">
+                <img src="./images/star.svg" alt="Star Rating">
+                <img src="./images/star.svg" alt="Star Rating">
+                <img src="./images/star.svg" alt="Star Rating">
+                <p>" The most well-known dummy text is the 'Lorem Ipsum',
+                    which is said to have originated in the 16th century. "</p>
+                <p class="testim_p2">- Carl Olivier <span>PA</span></p>
+            </div>
+
+            <h1><i class="fa-solid fa-chevron-right"></i></h1>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Hand picked products -->
+    <div class="hPicked">
+        <div class="hp_title">
+            <h1>Hand picked product for you</h1>
+        </div>
+
+
+        <div class="hp_products">
+            <!-- hp Images -->
+            <div class="hp_img">
+                <div class="hp_mainImg">
+                    <img class="mainImg_one" src="./images/may_like_1.webp" alt="The Witcher in the Woods">
+                    <img class="mainImg_two" src="./images/may_like_2.jpeg" alt="The Witcher in the Woods">
+                    <img class="mainImg_three" src="./images/may_like_3.jpeg" alt="The Witcher in the Woods">
+                    <img class="mainImg_four" src="./images/stack_6.jpeg" alt="The Witcher in the Woods">
+                </div>
+
+                <div class="hp_subImg">
+                    <div class="subImg" onclick="showOne()"><img src="./images/may_like_1.webp" alt="The Witcher"></div>
+                    <div class="subImg" onclick="showTwo()"><img src="./images/may_like_2.jpeg" alt=""></div>
+                    <div class="subImg" onclick="showThree()"><img src="./images/may_like_3.jpeg" alt=""></div>
+                    <div class="subImg" onclick="showFour()"><img src="./images/stack_6.jpeg" alt=""></div>
+                </div>
+            </div>
+
+
+            <!-- hp Text -->
+            <div class="hp_text">
+                <!-- hp top -->
+                <div class="hp_textTop">
+                    <h1>Harry Potter Series</h1>
+                    <p class="price">$250.00</p>
+                    <p> <i class="fa-solid fa-droplet"></i> <span class="hp_spanBold">14</span> sold in last <span
+                            class="hp_spanBold">10</span> hours.</p>
+                    <p><i class="fa-solid fa-hourglass-end"></i> HURRY! ONLY <span class="hp_spanColor">15</span> LEFT
+                        IN STOCK.</p>
+                </div>
+
+                <!-- hp mid -->
+                <div class="hp_textMid">
+                    <div class="range"></div>
+                    <p>Famous Publication of J.K ROWLING. Hurry limited stock left. To <br> inspire your love of
+                        reading.</p>
+                    <h2>J.K Rowling</h2>
+                    <div class="hp_textMid_child">
+                        <div class="product_amount">
+                            <p class="btn_amt">-</p>
+                            <p>1</p>
+                            <p class="btn_amt">+</p>
+                        </div>
+                        <button>Add to cart</button>
+                        <p class="hp_heart"><i class="fa-solid fa-heart"></i></p>
+                    </div>
+                </div>
+
+                <!-- hp bottom -->
+                <div class="hp_textBottom">
+                    <div class="hp_bottomImg">
+                        <img src="./images/brands_3.jpeg" alt="">
+                        <img src="./images/brands_4.jpeg" alt="">
+                        <img src="./images/brands_5.jpeg" alt="">
+                    </div>
+                    <p class="watching"><i class="fa-regular fa-eye"></i> <span class="hp_spanBold">82 People</span> are
+                        viewing this product right now.</p>
+                    <p><i class="fa-solid fa-truck"></i> Order in next 19 Hours and 30 Minutes to get it between sap
+                        <span class="hp_spanUline">Monday</span>,
+                        <br> <span class="hp_spanUline">5th October</span> and <span class="hp_spanUline">Sunday, 12th
+                            October</span>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- two divs -->
+        <div class="hp_suggestion">
+            <div class="sugg_main">
+                <div class="sugg_img"></div>
+                <div class="sugg_text">
+                    <h2>HORROR BOOK OF THIS <br> SEASON</h2>
+                    <p>40% Off</p>
+                    <button>Explore Now <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+
+            <div class="sugg_main">
+                <div class="sugg_img sugg_img2"></div>
+                <div class="sugg_text sugg_text2">
+                    <h2>DETECTIVE BOOK OF THE <br> YEAR</h2>
+                    <p>50% Off</p>
+                    <button>Explore Now <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- insta Books -->
+
+    <div class="insta_books">
+        <h2><i class="fa-brands fa-instagram"></i> #BOOKS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="insta_prod">
+            <div class="insta_img_main insta_main1">
+                <img src="./images/stack_1.jpeg">
+                <div class="insta_hoverLink instaLink1"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="insta_img_main insta_main2">
+                <img src="./images/stack_2.jpeg">
+                <div class="insta_hoverLink instaLink2"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="insta_img_main insta_main3">
+                <img src="./images/stack_3.jpeg">
+                <div class="insta_hoverLink instaLink3"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="insta_img_main insta_main4">
+                <img src="./images/stack_4.jpeg">
+                <div class="insta_hoverLink instaLink4"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            <div class="insta_img_main insta_main5">
+                <img src="./images/stack_5.webp">
+                <div class="insta_hoverLink instaLink5"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+
+        <button>Follow us on Instagram</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Brands -->
+
+    <div class="brands">
+        <h1>Brands</h1>
+        <p>Let us know how we help you today!</p>
+
+        <div class="brand_img">
+            <img src="./images/brands_1.webp">
+            <img src="./images/brands_2.webp">
+            <img src="./images/brands_3.jpeg">
+            <img src="./images/brands_4.jpeg">
+            <img src="./images/brands_5.jpeg">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Help Section (Background img) -->
+
+    <div class="help">
+        <h1>How can we help you?</h1>
+        <p>Let us know How can we help you today! <br> Call +12 345 6789 representative will contact you soon.</p>
+        <button>Contact Us <i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- form -->
+    <div class="form">
+        <div class="form_img">
+            <img src="./images/contact.svg" alt="">
+        </div>
+
+        <div class="form_text">
+            <h1>Looking forward to hearing from you</h1>
+            <p><label for="name">Your Name</label></p>
+            <input type="text" id="name" placeholder="Name">
+
+            <p><label for="email">Your Email</label></p>
+            <input type="email" id="email" placeholder="Email">
+
+            <p><label for="message">Message</label></p>
+            <textarea id="message" rows="4" placeholder="Message"></textarea>
+
+            <button>Submit</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer one -->
+
+    <footer class="footer_one">
+        <div class="footer_oneMain">
+            <div class="footer_option">
+                <h3>SHOP</h3>
+
+                <a href="">Comics</a>
+                <a href="">Story Books</a>
+                <a href="">Horror Books</a>
+                <a href="">Romantic Books</a>
+                <a href="">Biography</a>
+            </div>
+
+
+            <div class="footer_option">
+                <h3>INFORMATION</h3>
+
+                <a href="">About us</a>
+                <a href="">Customer Service</a>
+                <a href="">New Collection</a>
+                <a href="">Best Sellers</a>
+                <a href="">Manufacturers</a>
+                <a href="">Privacy Policy</a>
+            </div>
+
+
+            <div class="footer_option">
+                <h3>CUSTOMER SERVICE</h3>
+
+                <a href="">Search Terms</a>
+                <a href="">Advance Search</a>
+                <a href="">Orders and Returns</a>
+                <a href="">Contact Us</a>
+                <a href="">RSS</a>
+                <a href="">Helps & FAQ's</a>
+            </div>
+
+
+            <div class="footer_option">
+                <h3>SOCIAL CONTACTS</h3>
+
+                <div class="social_links">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <div class="payment">
+                    <h3>PAYMENT ACCEPTED</h3>
+
+                    <img src="./images/amex.jpg">
+                    <img src="./images/mastercard.jpg">
+                    <img src="./images/visa.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- hr -->
+        <hr>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer Two -->
+    <footer class="footer_two">
+        <p>Copyright © 2022, All Right Reserved <a href="">Smash Code</a></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // onClick Buttons, Change Divs
+        let products_div1 = document.querySelector(".products_div1");
+        let products_div2 = document.querySelector(".products_div2");
+        let products_div3 = document.querySelector(".products_div3");
+
+        let prod_btns1 = document.querySelector(".prod_btns1");
+        let prod_btns2 = document.querySelector(".prod_btns2");
+        let prod_btns3 = document.querySelector(".prod_btns3");
+
+        function showProduct1() {
+            products_div1.style.display = "block";
+            products_div2.style.display = "none";
+            products_div3.style.display = "none";
+            prod_btns1.style.border = "2px dashed #ac3b61a9";
+            prod_btns2.style.border = "2px dashed #00000017";
+            prod_btns3.style.border = "2px dashed #00000017";
+        }
+
+        function showProduct2() {
+            products_div1.style.display = "none";
+            products_div2.style.display = "block";
+            products_div3.style.display = "none";
+            prod_btns1.style.border = "2px dashed #00000017";
+            prod_btns2.style.border = "2px dashed #ac3b61a9";
+            prod_btns3.style.border = "2px dashed #00000017";
+        }
+
+        function showProduct3() {
+            products_div1.style.display = "none";
+            products_div2.style.display = "none";
+            products_div3.style.display = "block";
+            prod_btns1.style.border = "2px dashed #00000017";
+            prod_btns2.style.border = "2px dashed #00000017";
+            prod_btns3.style.border = "2px dashed #ac3b61a9";
+        }
+
+
+
+
+        // onClick sub-Images , show main-Image
+        // showOne()
+        let mainImg_one = document.querySelector(".mainImg_one");
+        let mainImg_two = document.querySelector(".mainImg_two");
+        let mainImg_three = document.querySelector(".mainImg_three");
+        let mainImg_four = document.querySelector(".mainImg_four");
+
+        function showOne() {
+            mainImg_one.style.display = "block";
+            mainImg_two.style.display = "none";
+            mainImg_three.style.display = "none";
+            mainImg_four.style.display = "none";
+        }
+
+        function showTwo() {
+            mainImg_one.style.display = "none";
+            mainImg_two.style.display = "block";
+            mainImg_three.style.display = "none";
+            mainImg_four.style.display = "none";
+        }
+
+        function showThree() {
+            mainImg_one.style.display = "none";
+            mainImg_two.style.display = "none";
+            mainImg_three.style.display = "block";
+            mainImg_four.style.display = "none";
+        }
+
+        function showFour() {
+            mainImg_one.style.display = "none";
+            mainImg_two.style.display = "none";
+            mainImg_three.style.display = "none";
+            mainImg_four.style.display = "block";
+        }
+
+
+
+
+        // search div Show and Close
+
+        let searchDiv = document.querySelector(".searchDiv");
+
+        function showSearch() {
+            searchDiv.style.height = "100vh";
+            document.body.style.position = "fixed";
+        }
+
+        function closeSearch() {
+            searchDiv.style.height = "0";
+            document.body.style.position = "inherit";
+        }
+
+
+
+
+        // Show, Hide CART
+
+        let cartDiv = document.querySelector(".cartDiv");
+
+        function showCart() {
+            cartDiv.style.right = "0";
+            document.body.style.position = "fixed";
+        }
+
+        function closeCart() {
+            cartDiv.style.right = "-70vw";
+            document.body.style.position = "inherit";
+        }
+
+
+
+
+        // show side Menu
+
+        function showSideMenu() {
+            let navBar_menu = document.querySelector(".navBar_menu");
+            let menuBar = document.getElementById("menuBar");
+            if (menuBar.checked === true) {
+                navBar_menu.style.left = "0vw";
+            }
+            else {
+                navBar_menu.style.left = "-60vw";
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
