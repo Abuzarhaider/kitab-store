@@ -12,6 +12,7 @@ body {
     background-position-y: 0px;
     background-repeat: no-repeat;
     cursor: default;
+    overflow-x: hidden;
 }
 
 input,
@@ -327,11 +328,11 @@ nav {
 
 /* show cart */
 .cartDiv {
-    width: 70vw;
+    width: 400px;
     background-color: rgba(0, 0, 255, 0.829);
     position: absolute;
     top: 0;
-    right: -70vw;
+    right: -4000px;
     overflow: hidden;
     transition: all .3s;
 }
@@ -489,6 +490,50 @@ nav {
     height: 380px;
     opacity: 0.8;
 }
+
+
+/* main sliding divs */
+
+.main_slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_slider_child{
+    width: 300%;
+    height: 380px;
+    margin: 0 0 0 -198%;
+    position: relative;
+    -webkit-animation-name: main_slider_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes main_slider_animation{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    20%{left: 100%;}
+    30%{left: 100%;}
+    40%{left: 200%;}
+    50%{left: 200%;}
+    60%{left: 100%;}
+    70%{left: 100%;}
+    80%{left: 0;}
+    100%{left: 0px;}
+}
+
+.main_slider_float{
+    height: 380px;
+    width: 33%;
+    float: left;
+}
+
+
+
+
+
+
 
 
 
@@ -1236,10 +1281,9 @@ nav {
 
 /* slider */
 .testim_slider {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 15px;
     overflow: hidden;
 }
@@ -1284,6 +1328,44 @@ nav {
     font-size: 13px;
     letter-spacing: 1px;
     opacity: 0.7;
+}
+
+
+/* Sliding divs */
+
+.testim_main{
+    width: 100%;
+    overflow: hidden;
+}
+
+@-webkit-keyframes slide_animation{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    20%{left: 100%;}
+    30%{left: 100%;}
+    40%{left: 200%;}
+    50%{left: 200%;}
+    60%{left: 100%;}
+    70%{left: 100%;}
+    80%{left: 0;}
+    100%{left: 0px;}
+}
+
+.testim_child{
+    width: 300%;
+    height: 163px;
+    margin: 0 0 0 -198%;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+.testim_float{
+    width: 33%;
+    height: 163px;
+    float: left;
 }
 
 
@@ -2381,6 +2463,11 @@ nav {
 
 
 
+
+
+
+
+
     /* -----------
         About 
     -------------*/
@@ -2751,6 +2838,16 @@ nav {
         height: 20px;
     }
 
+
+    /* sliding divs */
+
+    .testim_child{
+        height: 300px;
+    }
+
+    .testim_float{
+        height: 300px;
+    }
 
 
 
