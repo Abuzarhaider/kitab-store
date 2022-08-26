@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(./images/golden-gate.jpeg);
@@ -201,27 +205,44 @@ nav {
     color: rgb(0 0 0 / 55%);
     font-size: 13px;
     display: block;
+    position: relative;
+    width: fit-content;
 }
 
 .showLatest_text h4 {
     margin-bottom: 25px;
 }
 
+.showLatest_text>a:after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ac3b61;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: .2s;
+}
+
+.showLatest_text>a:hover:after {
+    width: 100%;
+}
+
 .showLatest_text a:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.latest:hover+.showLatest {
+.latest:hover .showLatest {
     height: 230px;
 }
 
 /* Show Books */
-.Books:hover+.showBooks {
+.Books:hover .showBooks {
     height: 230px;
 }
 
 /* Show Kids */
-.kids:hover+.showKids {
+.kids:hover .showKids {
     height: 230px;
 }
 
@@ -236,30 +257,28 @@ nav {
     color: rgb(0 0 0 / 55%);
     font-weight: 600;
 }
-
-.navBar_menu li {
-    cursor: pointer;
+.li_title{
     position: relative;
-
+    cursor: pointer;
 }
 
-.navBar_menu li:after {
+.navBar_menu .li_title:after {
     content: "";
     height: 2px;
     width: 0;
     background-color: #ac3b61;
     position: absolute;
-    bottom: -2px;
+    bottom: 0px;
     left: 0;
     transition: .2s;
 }
 
-.navBar_menu li:hover {
+.navBar_menu .li_title:hover {
     color: #ac3b61;
     transition: .2s;
 }
 
-.navBar_menu li:hover:after {
+.navBar_menu .li_title:hover:after {
     width: 100%;
 }
 
@@ -1178,7 +1197,7 @@ nav {
     background-color: white;
     display: flex;
     align-items: center;
-    padding: 50px 40px;
+    padding: 20px 40px;
     margin: 40px 0;
     box-shadow: 0 0 15px 0 #0000001c;
 }
@@ -1192,10 +1211,6 @@ nav {
     height: 225px;
 }
 
-.child3 {
-    padding: 20px 40px;
-    margin: 0;
-}
 
 .lorem_img2 {
     margin-right: 0;
@@ -3198,6 +3213,87 @@ nav {
     .footer_two p {
         font-size: .9rem;
     }
-
-
 }
+
+
+
+
+@media only screen and (max-width:1024px) and (min-width:781px){
+    
+    /* top banner */
+    .nav_topBanner{
+        padding: 8px 5%;
+    }
+
+    .nav_settings{
+        width: 70%;
+    }
+
+    .nav_info{
+        width: 20%;
+    }
+
+    .main_slider_child{
+        height: 300px;
+    }
+
+    .main_slider_float{
+        height: 300px;
+    }
+
+
+
+
+
+    /* Main navigaiton bar */
+    .navBar{
+        padding: 10px 5%;
+    }
+
+    .navBar_menu{
+        width: 55%;
+    }
+
+    .navBar_icons{
+        width: 15%;
+    }
+
+
+
+
+
+
+
+
+
+    /* Main Slider */
+    .animate_img img{
+        height: 250px;
+    }
+
+
+
+
+
+
+
+    /* features */
+    .child2_img img{
+        height: 120px;
+    }
+
+    .lorem_img2 img{
+        height: 185px;
+    }
+
+
+
+
+
+    .products_shop, .readmore, .sugg_main, .books{
+        margin: 8px;
+    }
+}
+
+
+
