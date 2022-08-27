@@ -260,6 +260,7 @@ nav {
 .li_title{
     position: relative;
     cursor: pointer;
+    width: fit-content;
 }
 
 .navBar_menu .li_title:after {
@@ -2394,8 +2395,8 @@ nav {
         display: block;
     }
 
-    .latest:hover + .showLatest{
-        height: 407px;
+    .latest:hover  .showLatest{
+        height: 410px;
     }
 
     .showLatest_text a:not(:last-child) {
@@ -2417,14 +2418,14 @@ nav {
         top: 111px;
     }
 
-    .Books:hover +.showBooks{
-        height: 407px;
+    .Books:hover .showBooks{
+        height: 410px;
     }
 
 
 
     /* show kids */
-    .kids:hover + .showKids{
+    .kids:hover  .showKids{
         height: 288px;
     }
 
